@@ -82,7 +82,7 @@ end
 
 
    
-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # EXAMPLE tagging an existing MP3 track..
 
@@ -115,7 +115,7 @@ if ! ID3::has_id3v2_tag?( file )        # if there is no v2 tag
    myfile.write(file)               # if we overwrite, we should save the old tag in "filename.oldtag"
    myfile.close
 end      
-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # EXAMPLE to convert a file from older id3v2.x tags to id3v2.3 tags
 
@@ -146,7 +146,7 @@ if ID3::has_id3v2_tag?( file )
    myfile.close
 end
 
-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # EXAMPLE to check if two tags are equivalent.. e.g. if they contain the 
 #         same fields with the same values..
@@ -161,4 +161,7 @@ self.each { |key,value|
 }
 return equivalent
 
-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+
+
+
